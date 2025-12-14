@@ -1,39 +1,19 @@
-name: SonarQube Scan
-
+name: Build
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
   pull_request:
-    branches: [ main, master ]
-
+    types: [opened, synchronize, reopened]
 jobs:
   sonarqube:
-    name: SonarQube Scan
-    runs-on: ubuntu-latest
+    name: SonarQube
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # обязательно для SonarQube
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run tests (optional, если есть)
-        run: npm test
-
-      - name: Run SonarQube Scanner
-        run: |
-          npm install -g sonarqube-scanner
-          sonar-scanner \
-            -Dsonar.projectKey=${{ github.event.repository.name }} \
-            -Dsonar.sources=. \
-            -Dsonar.host.url=https://sonarqubecf.hexlet.app \
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
-            -Dsonar.git.branch=${{ github.ref_name }} \
-            -Dsonar.exclusions=**/node_modules/**,**/coverage/**,**/*.config.js,**/dist/**,**/build/**
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
