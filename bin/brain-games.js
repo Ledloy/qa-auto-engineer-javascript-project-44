@@ -6,12 +6,13 @@ import { getQuestionAndAnswer as getEvenQA } from '../src/games/even.js';
 import { getQuestionAndAnswer as getCalcQA } from '../src/games/calc.js';
 import { getQuestionAndAnswer as getGcdQA } from '../src/games/gcd.js';
 import { getQuestionAndAnswer as getProgressionQA } from '../src/games/progression.js';
+import { getQuestionAndAnswer as getPrimeQA } from '../src/games/prime.js';
 
 const name = getUserName();
 const game = process.argv[2];
 
 if (!game) {
-  console.log('Usage: brain-games [even|calc|progression]');
+  console.log('Usage: brain-games [even|calc|progression|prime]');
   process.exit(1);
 }
 
@@ -28,7 +29,10 @@ switch (game) {
   case 'progression':
     runGame(name, getProgressionQA, 'What number is missing in the progression?');
     break;
+  case 'prime':
+     runGame(name, getPrimeQA, 'Answer "yes" if given number is prime. Otherwise answer "no".');
+    break;
   default:
-    console.log('Unknown game. Available games: even, calc, gcd, progression');
+    console.log('Unknown game. Available games: even, calc, gcd, progression, prime');
     process.exit(1);
 }

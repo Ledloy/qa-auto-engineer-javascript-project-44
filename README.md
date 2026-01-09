@@ -34,3 +34,10 @@
 [![asciicast]( https://asciinema.org/a/OM7k5EnK46SSsyW0.svg)]( https://asciinema.org/a/OM7k5EnK46SSsyW0)
 
 </details>
+
+<details>
+<summary>запись работы "Простое ли число?"</summary>
+
+[![asciicast]( https://asciinema.org/a/7iOAh1SpcjJNA96V.svg)]( https://asciinema.org/a/7iOAh1SpcjJNA96V)
+
+</details>
