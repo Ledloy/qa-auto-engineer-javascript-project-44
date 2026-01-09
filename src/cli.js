@@ -1,12 +1,10 @@
 // src/cli.js
-
-import { createRequire } from 'node:module';  // ✅ Исправлено!
-const require = createRequire(import.meta.url);
-const readlineSync = require('readline-sync');
-
+import { createRequire } from 'node:module' // ✅ Исправлено!
+const require = createRequire(import.meta.url)
+const readlineSync = require('readline-sync')
 export const getUserName = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  return name;
-};
+  console.log('Welcome to the Brain Games!')
+  const name = readlineSync.question('May I have your name? ')
+  console.log(`Hello, ${name}!`)
+  return name
+}
