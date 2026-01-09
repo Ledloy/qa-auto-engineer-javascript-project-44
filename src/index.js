@@ -7,7 +7,7 @@ const readlineSync = require('readline-sync');
 const ROUNDS_COUNT = 3;
 
 export const runGame = (name, getQuestionAndAnswer, description) => {
-  console.log(description); // ← Вот оно!
+  console.log(description); 
 
   for (let i = 0; i < ROUNDS_COUNT; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();

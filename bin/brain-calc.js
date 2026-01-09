@@ -5,4 +5,4 @@ import { runGame } from '../src/index.js';
 import { getQuestionAndAnswer as getCalcQA } from '../src/games/calc.js';
 
 const name = getUserName();
-runGame(name, getCalcQA);
+runGame(name, getCalcQA,'What is the result of the expression?');
