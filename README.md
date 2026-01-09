@@ -27,3 +27,10 @@ details>
 [![asciicast]( https://asciinema.org/a/tH05K0GV6u4IRXtv.svg)]( https://asciinema.org/a/tH05K0GV6u4IRXtv)
 
 </details>
+
+<details>
+<summary>запись работы "Арифметическая прогрессия"</summary>
+
+[![asciicast]( https://asciinema.org/a/OM7k5EnK46SSsyW0.svg)]( https://asciinema.org/a/OM7k5EnK46SSsyW0)
+
+</details>
