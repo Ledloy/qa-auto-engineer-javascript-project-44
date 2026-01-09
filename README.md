@@ -21,7 +21,7 @@
 
 </details>
 
-details>
+<details>
 <summary>запись работы "GCD(НОД)"</summary>
 
 [![asciicast]( https://asciinema.org/a/tH05K0GV6u4IRXtv.svg)]( https://asciinema.org/a/tH05K0GV6u4IRXtv)
