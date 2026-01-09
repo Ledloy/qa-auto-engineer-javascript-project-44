@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 import { getUserName } from '../src/cli.js';
-import { runEvenGame } from '../src/even.js';
+import { runGame } from '../src/index.js';      // общий движок
+import { getQuestionAndAnswer as getEvenQA } from '../src/games/even.js';
 
 const name = getUserName();
-runEvenGame(name);
+runGame(name, getEvenQA);
