@@ -13,3 +13,10 @@
 [![asciicast](https://asciinema.org/a/wN89X63JVayn9uDH2GLe5KPFl.svg)](https://asciinema.org/a/wN89X63JVayn9uDH2GLe5KPFl)
 
 </details>
+
+details>
+<summary>запись работы "Калькулятор"</summary>
+
+[![asciicast]( https://asciinema.org/a/TgHpgMnh3wyGkIwc.svg)]( https://asciinema.org/a/TgHpgMnh3wyGkIwc)
+
+</details>
