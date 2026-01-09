@@ -14,7 +14,7 @@
 
 </details>
 
-details>
+<details>
 <summary>запись работы "Калькулятор"</summary>
 
 [![asciicast]( https://asciinema.org/a/TgHpgMnh3wyGkIwc.svg)]( https://asciinema.org/a/TgHpgMnh3wyGkIwc)
