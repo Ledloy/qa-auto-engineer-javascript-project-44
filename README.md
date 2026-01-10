@@ -12,16 +12,17 @@ npm install -g hexlet-code-1.0.2.tgz
 ## Как играть:
 Запустите любую игру:
 
-"Проверка на четность"      brain-even
-"Калькулятор"               brain-calc
-"НОД"                       brain-gcd
-"Арифметическая прогрессия" brain-progression
-"Простое ли число?"         brain-prime
+Запустите любую игру:
 
+- **"Проверка на четность"** → `brain-even`
+- **"Калькулятор"** → `brain-calc`
+- **"НОД"** → `brain-gcd`
+- **"Арифметическая прогрессия"** → `brain-progression`
+- **"Простое ли число?"** → `brain-prime`
 ## Технологии
-JavaScript (ES Modules)
-Node.js
-readline-sync
+- ** JavaScript (ES Modules)
+- ** Node.js
+- ** readline-sync
 
 ## Автор:
     Ledloy(Андрей)
