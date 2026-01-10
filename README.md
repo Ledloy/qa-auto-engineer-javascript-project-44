@@ -28,6 +28,7 @@ npm install -g hexlet-code-1.0.2.tgz
     Ledloy(Андрей)
 
 ## Demo
+
 <details>
 <summary"Проверка на чётность"</summary>
 Проверяет, является ли число чётным.
