@@ -30,7 +30,7 @@ npm install -g hexlet-code-1.0.2.tgz
 ## Demo
 
 <details>
-<summary"Проверка на чётность"</summary>
+<summary>"Проверка на чётность"</summary>
 
 Проверяет, является ли число чётным.
 Запись показывает:
@@ -49,7 +49,7 @@ npm install -g hexlet-code-1.0.2.tgz
   Запись показывает:
 - Игру с правильными ответами (победа)
 - Игру с ошибкой (поражение)
-- 
+  
 [![asciicast]( https://asciinema.org/a/TgHpgMnh3wyGkIwc.svg)]( https://asciinema.org/a/TgHpgMnh3wyGkIwc)
 
 </details>
