@@ -20,9 +20,9 @@ npm install -g hexlet-code-1.0.2.tgz
 - **"Арифметическая прогрессия"** → `brain-progression`
 - **"Простое ли число?"** → `brain-prime`
 ## Технологии
-- ** JavaScript (ES Modules)
-- ** Node.js
-- ** readline-sync
+- **JavaScript (ES Modules)**
+- **Node.js**
+- **readline-sync**
 
 ## Автор:
     Ledloy(Андрей)
