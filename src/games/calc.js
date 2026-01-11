@@ -29,4 +29,3 @@ const getQuestionAndAnswer = () => {
 export default (name) => {
   runGame(name, getQuestionAndAnswer, 'What is the result of the expression?')
 }
-

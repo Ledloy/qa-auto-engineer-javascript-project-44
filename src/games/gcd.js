@@ -18,4 +18,3 @@ const getQuestionAndAnswer = () => {
 export default (name) => {
   runGame(name, getQuestionAndAnswer, 'Find the greatest common divisor of given numbers.')
 }
-
