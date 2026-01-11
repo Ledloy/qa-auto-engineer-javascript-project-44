@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+
+import { getUserName } from '../src/cli.js'
+
 import runCalc from '../src/games/calc.js'
 
-runCalc()
+const name = getUserName()
+runCalc(name)

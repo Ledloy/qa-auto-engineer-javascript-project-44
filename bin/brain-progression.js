@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+
+import { getUserName } from '../src/cli.js'
+
 import runProgression from '../src/games/progression.js'
 
-runEven()
+const name = getUserName()
+runProgression(name)

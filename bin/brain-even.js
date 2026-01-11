@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+
+import { getUserName } from '../src/cli.js'
+
 import runEven from '../src/games/even.js'
 
-runEven()
+const name = getUserName()
+runEven(name)
