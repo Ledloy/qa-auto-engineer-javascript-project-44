@@ -1,5 +1,3 @@
-import { getUserName } from '../cli.js'
-
 import { runGame } from '../index.js'
 
 import { getRandomInt } from '../utils.js'
@@ -19,9 +17,6 @@ const getQuestionAndAnswer = () => {
   return [String(number), answer]
 }
 
-const runPrime = () => {
-  const name = getUserName()
+export default (name) => {
   runGame(name, getQuestionAndAnswer, 'Answer "yes" if given number is prime. Otherwise answer "no".')
 }
-export default runPrime
-export { getQuestionAndAnswer }

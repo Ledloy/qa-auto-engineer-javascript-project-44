@@ -1,5 +1,3 @@
-import { getUserName } from '../cli.js'
-
 import { runGame } from '../index.js'
 
 import { getRandomInt } from '../utils.js'
@@ -17,9 +15,7 @@ const getQuestionAndAnswer = () => {
   return [question, answer]
 }
 
-const runGcd = () => {
-  const name = getUserName()
+export default (name) => {
   runGame(name, getQuestionAndAnswer, 'Find the greatest common divisor of given numbers.')
 }
-export default runGcd
-export { getQuestionAndAnswer }
+

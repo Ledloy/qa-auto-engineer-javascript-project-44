@@ -1,9 +1,11 @@
 #!/usr/bin/env node
-
 import { getGameName } from '../src/cli.js'
+
+import { getUserName } from '../src/cli.js'
 
 const gameName = getGameName()
 
+const name = getUserName()
 if (!gameName) {
   console.log('Welcome to the Brain Games!')
   console.log('Please choose a game: even, calc, gcd, progression, prime')

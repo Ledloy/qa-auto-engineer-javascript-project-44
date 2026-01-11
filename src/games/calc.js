@@ -1,5 +1,3 @@
-import { getUserName } from '../cli.js'
-
 import { runGame } from '../index.js'
 
 import { getRandomInt } from '../utils.js'
@@ -28,9 +26,7 @@ const getQuestionAndAnswer = () => {
   return [question, answer]
 }
 
-const runCalc = () => {
-  const name = getUserName()
+export default (name) => {
   runGame(name, getQuestionAndAnswer, 'What is the result of the expression?')
 }
-export default runCalc
-export { getQuestionAndAnswer }
+

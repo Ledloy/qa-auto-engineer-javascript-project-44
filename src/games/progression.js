@@ -1,5 +1,3 @@
-import { getUserName } from '../cli.js'
-
 import { runGame } from '../index.js'
 
 import { getRandomInt } from '../utils.js'
@@ -17,15 +15,14 @@ const getQuestionAndAnswer = () => {
   for (let i = 0; i < length; i += 1) {
     progression.push(start + i * step)
   }
+
   const answer = String(progression[hiddenIndex])
   progression[hiddenIndex] = '..'
   const question = progression.join(' ')
+
   return [question, answer]
 }
 
-const runProgression = () => {
-  const name = getUserName()
+export default (name) => {
   runGame(name, getQuestionAndAnswer, 'What number is missing in the progression?')
 }
-export default runProgression
-export { getQuestionAndAnswer }
