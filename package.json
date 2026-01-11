@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.2",
-  "description": "[![Actions Status](https://github.com/Ledloy/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Ledloy/qa-auto-engineer-javascript-project-44/actions)",
+  "description": "Набор консольных игр на логику и математику: чётное число, калькулятор, НОД, арифметическая прогрессия, простое число.",
   "homepage": "https://github.com/Ledloy/qa-auto-engineer-javascript-project-44#readme",
   "bugs": {
     "url": "https://github.com/Ledloy/qa-auto-engineer-javascript-project-44/issues"

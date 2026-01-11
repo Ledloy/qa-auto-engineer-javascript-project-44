@@ -1,6 +1,19 @@
-export const getQuestionAndAnswer = () => {
-  const number = Math.floor(Math.random() * 100) + 1
-  const question = String(number)
-  const correctAnswer = number % 2 === 0 ? 'yes' : 'no'
-  return [question, correctAnswer]
+import { getUserName } from '../cli.js'
+
+import { runGame } from '../index.js'
+
+import { getRandomInt } from '../utils.js'
+
+const getQuestionAndAnswer = () => {
+  const number = getRandomInt(1, 100)
+
+  const answer = number % 2 === 0 ? 'yes' : 'no'
+  return [String(number), answer]
 }
+
+const runEven = () => {
+  const name = getUserName()
+  runGame(name, getQuestionAndAnswer, 'Answer "yes" if the number is even, otherwise answer "no".')
+}
+export default runEven
+export { getQuestionAndAnswer }

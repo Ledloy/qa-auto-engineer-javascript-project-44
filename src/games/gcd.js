@@ -1,12 +1,25 @@
-// src/games/gcd.js
-const gcd = (a, b) => {
-  if (b === 0) return a
-  return gcd(b, a % b)
-}
-export const getQuestionAndAnswer = () => {
-  const num1 = Math.floor(Math.random() * 100) + 1
-  const num2 = Math.floor(Math.random() * 100) + 1
+import { getUserName } from '../cli.js'
+
+import { runGame } from '../index.js'
+
+import { getRandomInt } from '../utils.js'
+
+const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b))
+
+const getQuestionAndAnswer = () => {
+  const num1 = getRandomInt(1, 100)
+
+  const num2 = getRandomInt(1, 100)
+
   const question = `${num1} ${num2}`
-  const correctAnswer = gcd(num1, num2)
-  return [question, correctAnswer]
+
+  const answer = String(gcd(num1, num2))
+  return [question, answer]
 }
+
+const runGcd = () => {
+  const name = getUserName()
+  runGame(name, getQuestionAndAnswer, 'Find the greatest common divisor of given numbers.')
+}
+export default runGcd
+export { getQuestionAndAnswer }

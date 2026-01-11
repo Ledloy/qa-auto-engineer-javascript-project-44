@@ -1,23 +1,36 @@
-// src/games/calc.js
-export const getQuestionAndAnswer = () => {
-  const num1 = Math.floor(Math.random() * 100) + 1
-  const num2 = Math.floor(Math.random() * 100) + 1
-  const operations = ['+', '-', '*']
-  const operation = operations[Math.floor(Math.random() * operations.length)]
-  let correctAnswer
-  switch (operation) {
-    case '+':
-      correctAnswer = num1 + num2
-      break
-    case '-':
-      correctAnswer = num1 - num2
-      break
-    case '*':
-      correctAnswer = num1 * num2
-      break
-    default:
-      throw new Error('Unknown operation')
+import { getUserName } from '../cli.js'
+
+import { runGame } from '../index.js'
+
+import { getRandomInt } from '../utils.js'
+
+const getRandomOperator = () => ['+', '-', '*'][getRandomInt(0, 2)]
+
+const calculate = (a, b, operator) => {
+  switch (operator) {
+    case '+': return a + b
+    case '-': return a - b
+    case '*': return a * b
+    default: throw new Error(`Unknown operator: ${operator}`)
   }
-  const question = `${num1} ${operation} ${num2}`
-  return [question, correctAnswer]
 }
+
+const getQuestionAndAnswer = () => {
+  const num1 = getRandomInt(1, 50)
+
+  const num2 = getRandomInt(1, 50)
+
+  const operator = getRandomOperator()
+
+  const question = `${num1} ${operator} ${num2}`
+
+  const answer = String(calculate(num1, num2, operator))
+  return [question, answer]
+}
+
+const runCalc = () => {
+  const name = getUserName()
+  runGame(name, getQuestionAndAnswer, 'What is the result of the expression?')
+}
+export default runCalc
+export { getQuestionAndAnswer }
