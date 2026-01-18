@@ -1,8 +1,8 @@
 import { runGame } from '../index.js'
-
 import { getRandomInt } from '../utils.js'
 
-const getRandomOperator = () => ['+', '-', '*'][getRandomInt(0, 2)]
+const DESCRIPTION = 'What is the result of the expression?'
+const OPERATORS = ['+', '-', '*']
 
 const calculate = (a, b, operator) => {
   switch (operator) {
@@ -13,19 +13,15 @@ const calculate = (a, b, operator) => {
   }
 }
 
-const getQuestionAndAnswer = () => {
+const getTask = () => {
   const num1 = getRandomInt(1, 50)
-
   const num2 = getRandomInt(1, 50)
-
-  const operator = getRandomOperator()
-
+  const operator = OPERATORS[getRandomInt(0, OPERATORS.length - 1)]
   const question = `${num1} ${operator} ${num2}`
-
   const answer = String(calculate(num1, num2, operator))
   return [question, answer]
 }
 
-export default (name) => {
-  runGame(name, getQuestionAndAnswer, 'What is the result of the expression?')
+export default () => {
+  runGame(getTask, DESCRIPTION)
 }

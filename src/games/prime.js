@@ -1,22 +1,23 @@
 import { runGame } from '../index.js'
-
 import { getRandomInt } from '../utils.js'
+
+const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 const isPrime = (num) => {
   if (num < 2) return false
-  for (let i = 2; i <= Math.sqrt(num); i += 1) {
+  const limit = Math.sqrt(num)
+  for (let i = 2; i <= limit; i += 1) {
     if (num % i === 0) return false
   }
   return true
 }
 
-const getQuestionAndAnswer = () => {
+const getTask = () => {
   const number = getRandomInt(2, 100)
-
   const answer = isPrime(number) ? 'yes' : 'no'
   return [String(number), answer]
 }
 
-export default (name) => {
-  runGame(name, getQuestionAndAnswer, 'Answer "yes" if given number is prime. Otherwise answer "no".')
+export default () => {
+  runGame(getTask, DESCRIPTION)
 }
