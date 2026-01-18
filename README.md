@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Ledloy/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Ledloy/qa-auto-engineer-javascript-project-44/actions)
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-1-light.svg)](https://sonarcloud.io/summary/new_code?id=Ledloy_qa-auto-engineer-javascript-project-44)
+[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-highlight.svg)](https://sonarcloud.io/summary/new_code?id=Ledloy_qa-auto-engineer-javascript-project-44)
 
 # Brain Games
 Набор консольных игр на логику и математику. Каждая игра состоит из 3 раундов. Чтобы выиграть, нужно правильно ответить вопросы в трех рандах.
