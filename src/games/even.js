@@ -4,7 +4,7 @@ import { getRandomInt } from '../utils.js'
 
 const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-const isEven = (num) => num % 2 === 0
+const isEven = num => num % 2 === 0
 
 const getTask = () => {
   const num = getRandomInt(1, 100)

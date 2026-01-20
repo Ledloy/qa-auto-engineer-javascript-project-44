@@ -3,7 +3,7 @@
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-highlight.svg)](https://sonarcloud.io/summary/new_code?id=Ledloy_qa-auto-engineer-javascript-project-44)
 
 # Brain Games
-Набор консольных игр на логику и математику. Каждая игра состоит из 3 раундов. Чтобы выиграть, нужно правильно ответить вопросы в трех рандах.
+Набор консольных игр на логику и математику. Каждая игра состоит из 3 раундов. Чтобы выиграть, нужно правильно ответить вопросы в трех раундах.
 
 ## Установка
 Убедитесь, что у вас установлен **Node.js (версия 18 или выше)**.
