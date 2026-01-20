@@ -1,4 +1,5 @@
 import { runGame } from '../index.js'
+
 import { getRandomInt } from '../utils.js'
 
 const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -13,9 +14,9 @@ const isPrime = (num) => {
 }
 
 const getTask = () => {
-  const number = getRandomInt(2, 100)
-  const answer = isPrime(number) ? 'yes' : 'no'
-  return [String(number), answer]
+  const num = getRandomInt(1, 100)
+  const answer = isPrime(num) ? 'yes' : 'no'
+  return [String(num), answer]
 }
 
 export default () => {

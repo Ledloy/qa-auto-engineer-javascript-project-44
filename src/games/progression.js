@@ -1,4 +1,5 @@
 import { runGame } from '../index.js'
+
 import { getRandomInt } from '../utils.js'
 
 const DESCRIPTION = 'What number is missing in the progression?'
